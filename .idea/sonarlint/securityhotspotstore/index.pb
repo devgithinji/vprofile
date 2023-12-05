@@ -56,3 +56,11 @@ O
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+}
+Msrc/test/java/com/visualpathit/account/controllerTest/UserControllerTest.java,f/3/f3ecadab539b709a90b016ff7ea5ff3de714001e
+n
+>src/test/java/com/visualpathit/account/modelTest/RoleTest.java,e/7/e7131e44e7fdc020ce34b4d26975210fcb27c135
+n
+>src/test/java/com/visualpathit/account/modelTest/UserTest.java,1/4/143f742ca4ea393d3c9e5dbe1ab5befe7d774eab
+
+Osrc/test/java/com/visualpathit/account/setup/StandaloneMvcTestViewResolver.java,e/c/ecd3b73cf2ec4d8e3a6d495880212073b8c890e9
