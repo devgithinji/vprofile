@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34bbea90-7cfb-4158-8ed9-fd3a902e6cc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/visualpathit/account/controllerTest/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/visualpathit/account/modelTest/RoleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/visualpathit/account/modelTest/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/visualpathit/account/setup/StandaloneMvcTestViewResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdata/memcache.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdata/mysql.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdata/rabbitmq.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "aws-LiftAndShift",
     "last_opened_file_path": "/home/dennis/IdeaProjects/vprofile/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -76,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701765158970</updated>
-      <workItem from="1701765160031" duration="5825000" />
+      <workItem from="1701765160031" duration="8116000" />
     </task>
     <servers />
   </component>

@@ -64,3 +64,11 @@ n
 >src/test/java/com/visualpathit/account/modelTest/UserTest.java,1/4/143f742ca4ea393d3c9e5dbe1ab5befe7d774eab
 
 Osrc/test/java/com/visualpathit/account/setup/StandaloneMvcTestViewResolver.java,e/c/ecd3b73cf2ec4d8e3a6d495880212073b8c890e9
+A
+userdata/mysql.sh,0/0/00fff51cbd919253eb51844eee417280bbf4f7fe
+D
+userdata/memcache.sh,e/7/e752156508fe4717e288b502a0dc355bd459a7ad
+D
+userdata/rabbitmq.sh,f/e/feba7cf5f6066502985ab7c31f539fb2e686d43d
+B
+userdata/tomcat.sh,5/5/558ffab1c4ea7f8526141255402916ab7c7b0923
