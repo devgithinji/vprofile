@@ -50,9 +50,11 @@ implemented via shell scripts to automate the installation of the various servic
 
 ![Screenshot from 2023-12-06 16-53-39.png](assets/photoone.png)
 
-# Streamlined AWS Deployment: Elastic Beanstalk, Managed Services, and CDN Integration
+## Streamlined AWS Deployment: Elastic Beanstalk, Managed Services, and CDN Integration
 
-## 1. Modernizing Deployment with AWS Elastic Beanstalk:
+To avoid operational/Management overhead lets use PAAS services in AWS
+
+### 1. Modernizing Deployment with AWS Elastic Beanstalk:
 
 ### Elastic Beanstalk Ease:
 - Deploy the Spring Boot application effortlessly on AWS Elastic Beanstalk.
