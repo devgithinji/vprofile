@@ -151,3 +151,5 @@ This project employs a robust CI pipeline utilizing Jenkins, SonarQube, and Nexu
 By integrating these tools, the project establishes a comprehensive CI/CD pipeline with automated code analysis and efficient artifact management, ensuring high-quality code and reliable artifact storage.
 
 ![photothree.png](assets/photothree.png)
+
+
