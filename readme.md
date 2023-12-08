@@ -138,7 +138,7 @@ This project employs a robust CI pipeline utilizing Jenkins, SonarQube, and Nexu
 
 1. **Code Changes**: Developers push changes to the version control system (e.g., GitHub).
 
-2. **Jenkins Trigger**: Jenkins monitors the repository, triggering builds upon code changes.
+2. **Jenkins Trigger**: Jenkins monitors the repository (via github hooks on push event), triggering builds upon code changes.
 
 3. **Build and Analysis**: Jenkins fetches code, builds it, runs tests, and conducts SonarQube analysis for code quality.
 
