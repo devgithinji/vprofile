@@ -1,20 +1,21 @@
-### DEVOPS PROJECT
+# DevOps Project
 
-Tech stack
-Spring Boot app
-Rabbit MQ
-Memcached
-Mysql 
+## Tech Stack
+- Spring Boot app
+- Rabbit MQ
+- Memcached
+- MySQL
 
-## Lift and Shift approach
-implemented via shell scripts to automate the installation of the various services in the EC2 instances
+## Lift and Shift Approach
+
+This project follows a "Lift and Shift" approach, implemented via shell scripts to automate the installation of various services on EC2 instances.
 
 ### Spring Boot Application
 
 #### EC2 Instance
 - Launch an EC2 instance for the Spring Boot app.
 - Configure Java, Tomcat, and app dependencies.
-- Place the instance in "spring-app-sg" security group.
+- Place the instance in the "spring-app-sg" security group.
 
 #### Auto Scaling Group
 - Set up Auto Scaling Group for scalability.
@@ -47,20 +48,19 @@ implemented via shell scripts to automate the installation of the various servic
 - Create an alias record in Route 53 pointing to the ALB.
 - Ensure correct domain configuration to route traffic to the ALB.
 
-
 ![Screenshot from 2023-12-06 16-53-39.png](assets/photoone.png)
 
 ## Streamlined AWS Deployment: Elastic Beanstalk, Managed Services, and CDN Integration
 
-To avoid operational/Management overhead lets use PAAS services in AWS
+To avoid operational/management overhead, let's use PaaS services in AWS.
 
 ### 1. Modernizing Deployment with AWS Elastic Beanstalk:
 
-### Elastic Beanstalk Ease:
+#### Elastic Beanstalk Ease:
 - Deploy the Spring Boot application effortlessly on AWS Elastic Beanstalk.
 - Leverage Elastic Beanstalk's simplicity for environment creation and management.
 
-### Artifact Deployment from S3:
+#### Artifact Deployment from S3:
 - Store the Spring Boot application artifact in an S3 bucket.
 - Configure Elastic Beanstalk to seamlessly retrieve the artifact from S3 during deployment.
 
@@ -96,3 +96,58 @@ To avoid operational/Management overhead lets use PAAS services in AWS
 
 ![Screenshot from 2023-12-06 16-53-39.png](assets/phototwo.png)
 
+## CI Pipeline with Jenkins, SonarQube, and Nexus
+
+Continuous Integration (CI) is a software development practice that involves frequently integrating code changes from multiple contributors into a shared repository. The primary goal of CI is to detect and address integration issues early in the development process.
+
+### Overview
+
+This project employs a robust CI pipeline utilizing Jenkins, SonarQube, and Nexus on EC2 instances. Each tool plays a crucial role in automating the build, analysis, and artifact storage processes.
+
+### Usage
+
+#### Jenkins
+
+- **Code Build and Integration**: Jenkins orchestrates the build process by fetching code, compiling, running tests, and generating artifacts.
+
+- **Continuous Integration**: Jenkins monitors version control for changes, triggering builds automatically to ensure continuous integration.
+
+- **Configuration**: Define build and deployment processes using Jenkins pipeline scripts or freestyle jobs through the web interface or Jenkinsfiles.
+
+- **Integration with SonarQube and Nexus**: Utilize Jenkins plugins to seamlessly integrate with SonarQube for code analysis and Nexus for artifact storage.
+
+#### SonarQube
+
+- **Code Analysis**: SonarQube conducts static code analysis, identifying code smells, bugs, and security vulnerabilities.
+
+- **Integration with Jenkins**: Configure Jenkins jobs to trigger SonarQube analysis as part of the build process using the SonarQube Scanner plugin.
+
+- **Dashboard and Reports**: Access the SonarQube web dashboard for detailed reports on code quality, providing insights into issues, code coverage, and maintainability.
+
+#### Nexus
+
+- **Artifact Storage**: Nexus serves as a centralized repository for storing build artifacts, including JARs, WARs, and dependencies.
+
+- **Integration with Jenkins**: Jenkins jobs are configured to deploy artifacts to Nexus after successful builds, ensuring versioned and easily retrievable artifacts.
+
+- **Repository Management**: Use Nexus to create repositories, manage access controls, and efficiently store and retrieve artifacts.
+
+- **Dependency Management**: Nexus proxies and caches dependencies from external repositories, reducing build times and maintaining a reliable build environment.
+
+### Overall Usage Flow
+
+1. **Code Changes**: Developers push changes to the version control system (e.g., GitHub).
+
+2. **Jenkins Trigger**: Jenkins monitors the repository, triggering builds upon code changes.
+
+3. **Build and Analysis**: Jenkins fetches code, builds it, runs tests, and conducts SonarQube analysis for code quality.
+
+4. **SonarQube Report**: Developers access the SonarQube dashboard to review analysis reports and address issues.
+
+5. **Artifact Deployment**: Successful builds result in artifact deployment to Nexus for versioned storage.
+
+6. **Artifact Retrieval**: Teams retrieve artifacts from Nexus for downstream processes or deployment.
+
+By integrating these tools, the project establishes a comprehensive CI/CD pipeline with automated code analysis and efficient artifact management, ensuring high-quality code and reliable artifact storage.
+
+![photothree.png](assets/photothree.png)
