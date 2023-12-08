@@ -151,3 +151,53 @@ This project employs a robust CI pipeline utilizing Jenkins, SonarQube, and Nexu
 By integrating these tools, the project establishes a comprehensive CI/CD pipeline with automated code analysis and efficient artifact management, ensuring high-quality code and reliable artifact storage.
 
 ![photothree.png](assets/photothree.png)
+
+## Migrating from Jenkins to AWS Code Services
+
+### Overview
+
+This repository has transitioned from Jenkins to AWS CodeCommit, CodeBuild, and SonarCloud for a more efficient CI pipeline. Here's a step-by-step guide for the migration:
+
+### Steps
+
+#### 1. Source Code Migration
+
+- Push existing code to AWS CodeCommit.
+
+#### 2. Build Configuration Update
+
+- Modify build configuration files for AWS CodeBuild and SonarCloud.
+
+#### 3. CodeBuild and SonarCloud Integration
+
+- Set up CodeBuild to trigger builds.
+- Integrate SonarCloud for continuous code analysis.
+
+#### 4. Deployment Configuration Update
+
+- Adjust deployment settings to push artifacts to AWS S3.
+
+#### 5. Retire Jenkins and Related Servers
+
+- Gradually phase out Jenkins, Nexus, and SonarQube instances.
+
+### Prerequisites
+
+- AWS Account
+- AWS CLI
+- SonarCloud Account
+- Git repository migrated to AWS CodeCommit
+
+### Configuration
+
+- AWS CodeCommit: Create a repository and configure Git remote.
+- AWS CodeBuild: Define build specifications (`buildspec.yml`).
+- SonarCloud: Integrate with CodeBuild for code analysis.
+- AWS S3: Set up a bucket for artifact storage.
+
+![photothree.png](assets/awsci.drawio.png)
+
+
+
+
+
