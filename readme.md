@@ -197,6 +197,15 @@ This repository has transitioned from Jenkins to AWS CodeCommit, CodeBuild, and 
 
 ![photothree.png](assets/awsci.drawio.png)
 
+## CI/CD Jenkins
+
+just a continuation of the earlier continuous integration with Jenkins
+
+The production pipeline is triggered after a successful merge on the master branch where it does a deployment on AWS ECS
+
+![photothree.png](assets/cicdjenkins.png)
+
+
 
 
 
