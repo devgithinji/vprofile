@@ -1,5 +1,8 @@
 FROM tomcat:8-jre11
 
+LABEL "Project"="Vprofile"
+LABEL "Author"="dennis githinji"
+
 #remove default web apps
 RUN rm -rf /usr/local/tomcat/webapps/*
 
