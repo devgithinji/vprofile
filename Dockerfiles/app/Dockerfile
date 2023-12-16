@@ -7,7 +7,7 @@ LABEL "Author"="dennis githinji"
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 #copy the built war package to tomcat
-COPY target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/vprofile.war /usr/local/tomcat/webapps/ROOT.war
 
 #expose port
 EXPOSE 8080
