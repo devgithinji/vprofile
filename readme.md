@@ -256,7 +256,42 @@ The following are the build jobs in the pipeline
 
 ![photothree.png](assets/awscicd.png)
 
+## Kubernetes
 
+Kubernetes is an opensource container orchestration platform that automates the deployment, scaling and management of
+containerized applications. It solves challenges related to
+
+* container orchestration,
+* scaling
+* load balancing
+* service discovery
+* networking
+* application lifecycle management
+
+Kubernetes simplifies complex tasks, ensures consistent application states and enables efficient management of
+containerized applications at scale
+
+### Kubernetes Deployment and Management Tools.
+
+* **Minikube**
+  Used to run a single node kubernetes custer locally on your machine, primarily used for development, testing and
+  learning purposes
+* **Kubeadm**
+  tool used for deployment of kubernetes clusters and it automates the process of setting up a basic production ready
+  cluster (multi node cluster), mostly used in on premises or cloud enviroments where manual configuration is preferred
+* **kops** (kubernetes operations)
+  it is a set of command-line tools for provisioning and managing kubernetes clusters on various cloud platforms such as
+  AWS
+  Kops is particularly useful for creating and managing production-grade highly available kubernetes clusters on cloud
+  infrastructure. It abstracts complexity of setting up networking, storage and other components
+* **AWS EKS (Elastic Kubernetes Service)**
+  AWS EKS is a managed Kubernetes service provided by Amazon Web Services (AWS). It simplifies the process of deploying,
+  managing, and scaling Kubernetes clusters on AWS infrastructure.
+
+  It is suitable for organizations that want a fully managed Kubernetes service, allowing them to focus more on
+  deploying and managing applications rather than the underlying infrastructure. It integrates with other AWS services
+  and provides a seamless experience for AWS users.
+  
 
 
 
